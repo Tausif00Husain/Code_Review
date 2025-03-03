@@ -1,0 +1,21 @@
+class Class:
+    def __init__(self,per,roll_no):
+        self.p=per
+        self.r_o=roll_no
+    
+    
+    def percentage(self):
+        if self.p>=int("75"):
+            print("the percentage of roll no.:",self.r_o,"and theri percentageis", self.p,"%")
+        elif self.p>=int("60"):
+            print("the percentage of roll no.:",self.r_o,"and theri percentageis", self.p,"%")
+        elif self.p>=int("45"):
+            print("the percetnage of roll no.:",self.r_o,"and theri percentageis",self.p,"%")
+        else:
+            print("the percentage of roll no.:",self.r_o,"and theri percentageis",self.p,"%")
+        
+
+x=int(input("enter the percentage: "))
+y=int(input("enter the roll no.: "))
+student=Class(x,y)
+student.percentage()
